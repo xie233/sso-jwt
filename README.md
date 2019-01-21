@@ -18,7 +18,7 @@
 
 - sso-server 是认证服务器端口8090, sso-service 和 sso-service22 是两个相同的服务==端口8091和8092 
 
-访问 [localhost:8091](http://localhost:8091) 跳转到 [localhost:8090](localhost:8090) 再返回 [localhost:8091](http://localhost:8091)
+访问 [localhost:8091](http://localhost:8091) 跳转到 [localhost:8090](http://localhost:8090) 再返回 [localhost:8091](http://localhost:8091)
 
 访问  [localhost:8092](http://localhost:8092) 就不用再登录了
 
