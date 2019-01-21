@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Home</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</head>
+
+<body>
+
+<p th:text="'Hello,'+ ${user.username}"></p>
+<p th:text="'Your words: ' + ${user.words}"></p>
+
+</body>
+
+</html>

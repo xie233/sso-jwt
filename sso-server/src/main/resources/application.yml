@@ -1,0 +1,23 @@
+server:
+    port: 8090
+
+
+
+#单位为分钟
+TTL: 5
+refreshTTL: 2
+#加密key,事先约定好
+salt: asdfgh
+words: say nothing
+
+redis:
+  host: localhost
+  port: 6379
+
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+    enabled: true
+    encoding: UTF-8

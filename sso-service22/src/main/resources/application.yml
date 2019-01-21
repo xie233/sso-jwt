@@ -1,0 +1,21 @@
+server:
+  port: 8092
+
+ServerHost: http://localhost:8090
+
+salt: asdfgh
+TTL: 5
+
+
+
+redis:
+  host: localhost
+  port: 6379
+
+spring:
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+    enabled: true
+    encoding: UTF-8
