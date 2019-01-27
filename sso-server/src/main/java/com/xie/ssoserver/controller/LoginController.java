@@ -31,7 +31,7 @@ public class LoginController {
     @Value(value = "${refreshTTL}")
     private String refreshTTL;
     private static String accessToken;
-    private static String refreshJwt;
+    private static String refreshToken;
 
     @Autowired
     RedisUtil redisUtil;
@@ -61,9 +61,7 @@ public class LoginController {
             String subject = JwtUtil.genSubject(user);
             accessToken = JwtUtil.generateJwt(subject, Long.parseLong(TTL) * 60000);
             log.info("accessToken: "+accessToken);
-//            refreshJwt = JwtUtil.generateJwt(subject, Long.parseLong(refreshTTL) * 60000);
             CookieUtil.addCookie(response, "accessToken", accessToken);
-//            CookieUtil.addCookie(response, "refreshJwt", refreshJwt);
             return Result.ok(user);
         } else {
             return null;
